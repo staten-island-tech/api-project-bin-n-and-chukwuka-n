@@ -4,10 +4,9 @@ const query = async function () {
         const data = await response.json();
         data.results.forEach((tvshow) => {
             DOMSelectors.grid.insertAdjacentHTML("beforeend", ''
-            );
-     catch (error) {
-        console.log(error);
-        alert("Something went wrong");
+            )}) 
+    }catch(err){
+        alert(err)
     }
-
+};
 query();
