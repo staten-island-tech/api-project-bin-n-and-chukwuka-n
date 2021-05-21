@@ -32,6 +32,11 @@ const query = async function () {
     } catch (error) {
         console.log(error);
         alert("Something went wrong");
+        data.results.forEach((tvshow) => {
+            DOMSelectors.grid.insertAdjacentHTML("beforeend", ''
+            )}) 
+    }catch(err){
+        alert(err)
     }
-}
+};
 query();
