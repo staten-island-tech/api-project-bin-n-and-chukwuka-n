@@ -15,12 +15,12 @@ const query = async function () {
               <h2 class="Tvshow-header">${TVshows.original_title}</h2>
               <div class="score-box">
                 <p class="user-score">Community Score</p>
-                <p class="user-score">8.2</p>
+                <p class="user-score">${TVshows.vote_average}</p>
               </div>
             </div>
             <div class="release-date">
               <p class="releasing-date">Released</p>
-              <p class="releasing-date">2015-10-09</p>
+              <p class="releasing-date">${TVshows,release_date}</p>
             </div>
             <div class="TVshow-genres">
               <li class="TVshow-genre">Action and Adventure</li>
@@ -32,11 +32,4 @@ const query = async function () {
     } catch (error) {
         console.log(error);
         alert("Something went wrong");
-        data.results.forEach((tvshow) => {
-            DOMSelectors.grid.insertAdjacentHTML("beforeend", ''
-            )}) 
-    }catch(err){
-        alert(err)
-    }
-};
 query();
