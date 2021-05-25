@@ -4,10 +4,11 @@ const query = async function () {
         const data = await response.json();
         console.log(data.results)
         data.results.forEach((TVshows) => {
-            DOMSelectors.grid.insertAdjacentHTML("beforeend",
-            '<div class="TVshow-card">
+            DOMSelectors.grid.insertAdjacentHTML(
+            "beforeend",
+            `<div class="TVshow-card">
             <div class="TvShow-front">
-              <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nu6dcBfxr4VmOBj4k1S9r0r1MOW.jpg" 
+              <img src="https://www.themoviedb.org/t/p/w600/${TVshow.poster_path}" 
               alt=""
             class="poster" />
             </div>
@@ -28,8 +29,11 @@ const query = async function () {
               <li class="TVshow-genre">Sci-Fi</li>
               <li class="TVshow-genre">Comedy</li>
             </div>')
+          </div>
         })
-    } catch (error) {
-        console.log(error);
-        alert("Something went wrong");
+    } 
+    catch (error) {
+      console.log(error);
+      alert("Something went wrong");
+    }
 query();
