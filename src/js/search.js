@@ -3,6 +3,7 @@ import {genres} from "genre";
 
 const listen= function () {
     DOMSelectors.searchForm.addEventListener("submit", function(e) {
+      console.log("submit");
         e.preventDefault();
         const searchParams = DOMSelectors.searchArea.nodeValue;
         const searchQuery = async function(){try {
@@ -45,4 +46,4 @@ const listen= function () {
         };
       }})}
     
-SearchQuery();
+searchQuery();
