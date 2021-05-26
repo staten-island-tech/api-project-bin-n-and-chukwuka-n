@@ -28,12 +28,14 @@ const query = async function () {
               <li class="TVshow-genre">Comedy</li>
               <li class="TVshow-genre">Sci-Fi</li>
               <li class="TVshow-genre">Comedy</li>
-            </div>')
-          </div>
-        })
-    } 
+            </div>)
+          </div>`
+        )
+            })
+    }
     catch (error) {
       console.log(error);
       alert("Something went wrong");
-    }
-query();
+    };
+  }
+query();  
