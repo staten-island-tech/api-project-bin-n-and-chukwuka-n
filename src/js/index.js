@@ -8,7 +8,7 @@ const query = async function () {
             "beforeend",
             `<div class="TVshow-card">
             <div class="TvShow-front">
-              <img src="https://www.themoviedb.org/t/p/w600/${TVshow.poster_path}" 
+              <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nu6dcBfxr4VmOBj4k1S9r0r1MOW.jpg" 
               alt=""
             class="poster" />
             </div>
@@ -21,7 +21,7 @@ const query = async function () {
             </div>
             <div class="release-date">
               <p class="releasing-date">Released</p>
-              <p class="releasing-date">${TVshows,release_date}</p>
+              <p class="releasing-date">${TVshows.release_date}</p>
             </div>
             <div class="TVshow-genres">
               <li class="TVshow-genre">Action and Adventure</li>
